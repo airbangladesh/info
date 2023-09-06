@@ -1,0 +1,155 @@
+<!-- <button onclick="window.print()">Print this page</button> -->
+
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Air bangladesh</title>
+        <style>
+            /* Initially hide the input text bar */
+            *{
+                text-transform: uppercase;
+            }
+            .input-bar {
+                display: none;
+                opacity: 0;
+                transition: opacity 1s;
+            }
+    
+            /* Show the input text bar when the checkbox is checked */
+            .checkbox:checked + .input-bar {
+                display: block;
+                opacity: 1;
+            }
+            input,textarea{
+                width: 100%;
+                padding: 10px 12px;
+                margin: 8px 0;
+                box-sizing: border-box;
+                border: 2px solid #007bff;
+                border-radius: 4px;
+            }
+            button{
+                padding: 12px 16px;
+                background-color: #007bff;
+                border-radius: 5px;
+                border: 1px solid #fff;
+                transition: 0.5s;
+                color: #fff;
+            }
+            button:hover{
+                color: #007bff;
+                background-color: transparent;
+                border: 1px solid #007bff;
+            }
+        </style>
+</head>
+<body>
+    <center><h2>Air Bangladesh</h2></center>
+<form action="">
+<label for="text"> Your Nmae:</label>
+<input placeholder="Full Nmae"><br>
+ 
+<label for="text"> Your Sort Nmae:</label>
+<input placeholder="Sort Nmae"><br>
+ 
+<label for="text"> Father name:</label>
+<input placeholder="Father name"><br>
+ 
+<label for="text"> Mother name:</label>
+<input placeholder="Mother name"><br>
+ 
+<label for="text"> Permanent Address :</label>
+<input placeholder="Permanent Address"><br>
+ 
+<label for="text"> Dath of birth: dd/mm/yy</label>
+<input placeholder="Dath of birth: 01 jan 2023"><br>
+ 
+<label for="text"> Place of Birth:</label>
+<input placeholder="Place of Birth"><br>
+ 
+<label for="text"> Sex:</label>
+<input placeholder="Male / Female "><br>
+ 
+<label for="text"> Religion:</label>
+<input placeholder="Hindu / Muslim / Kristen "><br>
+ 
+<label for="text"> Marital Status:</label>
+<input placeholder="Married / Single"><br>
+ 
+<label for="text"> Nationality:</label>
+<input placeholder="Bangladeshi"><br>
+ 
+<label for="text"> National ID Card No:</label>
+<input placeholder="000 000 000 000 "><br>
+ <hr><br>
+<label for="text"> EDUCATION: &nbsp; যদি না থাকে তাহলে N/A  লিখুন ***</label><br><hr>
+<label for="textarea">PSC :
+    dsvsv:
+</label><br>
+<input type="checkbox" id="myCheckbox" class="checkbox">
+<textarea id="w3review" class="input-bar" name="w3review" rows="4" cols="50" placeholder="If not then enter N/A">PSC: 
+    vvszvd </textarea>
+ <br>
+<label for="textarea">jSC :</label><br>
+<textarea id="w3review" name="w3review" rows="4" cols="50" placeholder="If not then enter N/A">JSC: </textarea>
+ <br>
+<label for="textarea">SSC :</label><br>
+<textarea id="w3review" name="w3review" rows="4" cols="50" placeholder="If not then enter N/A">SSC: </textarea>
+ <br>
+<label for="textarea"></label><br>
+<textarea id="w3review" name="w3review" rows="4" cols="50" placeholder="If not then enter N/A">Other: </textarea>
+ <br><hr>
+<label for="text"> PHONE Number:</label>
+<input placeholder="Enter text"><br>
+ 
+<label for="text"> Blood Group:</label>
+<input placeholder="Enter text"><br>
+ 
+<label for="text"> Height:</label>
+<input placeholder="Enter text"><br>
+ 
+<label for="text"> Weight:</label>
+<input placeholder="Enter text"><br>
+ 
+<label for="text"> Passport Number:</label>
+<input placeholder="Enter Passport Number"><br>
+
+
+<!-- <label for="text"> Blood Group:</label>
+<input type="checkbox" id="myCheckbox" class="checkbox">
+<input type="text" class="input-bar" placeholder="Enter text"><br>
+
+<label for="text"> Height:</label>
+<input type="checkbox" id="myCheckbox" class="checkbox">
+<input type="text" class="input-bar" placeholder="Enter text"><br>
+ 
+<label for="text"> Weight:</label>
+<input type="checkbox" id="myCheckbox" class="checkbox">
+<input type="text" class="input-bar" placeholder="Enter text"><br>
+
+<label for="text"> Passport Number:</label>
+<input type="checkbox" id="myCheckbox" class="checkbox">
+<input type="text" class="input-bar" placeholder="Enter text">
+  -->
+<button onclick="window.print()">Print this page</button>
+<button style="float: right;">Back to Webpage</button>
+</form>
+
+<script>
+    const checkbox = document.getElementById('myCheckbox');
+    const inputBar = document.querySelector('.input-bar');
+
+    checkbox.addEventListener('change', function () {
+        if (this.checked) {
+            inputBar.style.opacity = '1';
+        } else {
+            inputBar.style.opacity = '0';
+        }
+    });
+</script>
+
+</body>
+</html>
+
+

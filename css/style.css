@@ -1,0 +1,62 @@
+*{
+    cursor: default;
+}
+.cs-main{
+    width: 80%;
+    width: 0 auto;
+}
+.sec-pd{
+    padding: 10px;
+}
+.p-3 , .m-3{
+    padding: 16px;
+}
+.js-bt{
+    justify-content: space-between;
+}
+.al-cn{
+    align-items: center;
+}
+
+/* custon */
+.cs-nav{
+    position: fixed;
+    z-index:1;
+    width: 100%;
+}
+.cs-card{
+    justify-content: space-around;
+}
+@media only screen and (max-width: 850px) {
+   .cs-card{
+    flex-wrap: wrap;
+    align-items: center;
+   }
+  }
+  .cs-accordion {
+    width: 60%;
+    margin: 0 auto;
+    gap: 2em;
+}
+  @media only screen and (max-width: 850px) {
+    .cs-accordion{
+        flex-direction: column;
+      }
+   }
+   .cs-footer{
+    background-image: url(\https://www.biman-airlines.com/assets/images/bg_3.jpg);
+    background-size: contain;
+   }
+   @media only screen and (max-width: 850px) {
+   .cs-footer{
+    background-image: none;
+    background-color: aliceblue;
+   }
+   .pb-5, .py-5 {
+    padding-bottom: 0rem!important;
+}
+.pb-4, .py-4 {
+    padding-bottom: 0rem!important;
+}
+   }
+  

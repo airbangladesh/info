@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Air Bangladesh</title>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <style>
+        /* Initially hide the input text bar */
+        *{
+            text-transform: uppercase;
+        }
+        .input-bar {
+            display: none;
+            opacity: 0;
+            transition: opacity 1s;
+        }
+
+        /* Show the input text bar when the checkbox is checked */
+        .checkbox:checked + .input-bar {
+            display: block;
+            opacity: 1;
+        }
+    </style>
+</head>
+<body>
+    <form action="">
+        <label for="text"> Nmae:</label>
+<input placeholder="Enter text"><br>
+ 
+<label for="text"> Father name:</label>
+<input placeholder="Enter text"><br>
+ 
+<label for="text"> Mother name:</label>
+<input placeholder="Enter text"><br>
+ 
+<label for="text"> Permanent Address :</label>
+<input placeholder="Enter text"><br>
+ 
+<label for="text"> Dath of birth:</label>
+<input placeholder="Enter text"><br>
+ 
+<label for="text"> Place of Birth:</label>
+<input placeholder="Enter text"><br>
+ 
+<label for="text"> Sex:</label>
+<input placeholder="Enter text"><br>
+ 
+<label for="text"> Religion:</label>
+<input placeholder="Enter text"><br>
+ 
+<label for="text"> Marital Status:</label>
+<input placeholder="Enter text"><br>
+ 
+<label for="text"> Nationality:</label>
+<input placeholder="Enter text"><br>
+ 
+<label for="text"> National ID Card No:</label>
+<input placeholder="Enter text"><br>
+ 
+<label for="text"> EDUCATION:</label>
+<input placeholder="Enter text"><br>
+ 
+<label for="text"> PHONE Number:</label>
+<input placeholder="Enter text"><br>
+
+<label for="text"> Blood Group:</label>
+<input type="checkbox" id="myCheckbox" class="checkbox">
+<input type="text" class="input-bar" placeholder="Enter text"><br>
+
+<label for="text"> Height:</label>
+<input type="checkbox" id="myCheckbox" class="checkbox">
+<input type="text" class="input-bar" placeholder="Enter text"><br>
+ 
+<label for="text"> Weight:</label>
+<input type="checkbox" id="myCheckbox" class="checkbox">
+<input type="text" class="input-bar" placeholder="Enter text"><br>
+
+<label for="text"> Passport Number:</label>
+<input type="checkbox" id="myCheckbox" class="checkbox">
+<input type="text" class="input-bar" placeholder="Enter text">
+ 
+    </form>
+
+    <button onclick="window.print()">Print this page</button>
+    <!--javascript-->
+    <script>
+        const checkbox = document.getElementById('myCheckbox');
+        const inputBar = document.querySelector('.input-bar');
+    
+        checkbox.addEventListener('change', function () {
+            if (this.checked) {
+                inputBar.style.opacity = '1';
+            } else {
+                inputBar.style.opacity = '0';
+            }
+        });
+    </script>
+</body>
+</html>
